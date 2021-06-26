@@ -1,0 +1,55 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+</style>
+
+
+
+<header class="bg-info">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt- text-white"> Sobre </h3>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="mt-4 center">
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    
+                    
+                    <p class="card-text">
+                        O projeto BsIn tem como objetivo prover uma aplicação web que ajude e informe os 
+                        estudantes do curso de BSI (Bacharelado em Sistemas de Informação) da UFRN-CERES, 
+                        ajudando a tirar duvidas, informando curiosidades do curso, tutorias ajudando a resolver
+                         problemas frequentes do curso, isso e muito mais do mundo do BSI da UFRN-CERES.
+                    </p>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Home &rarr;</a>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+{% endblock content %}
+     
