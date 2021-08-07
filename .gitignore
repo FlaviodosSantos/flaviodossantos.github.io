@@ -4,7 +4,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,django,python
 
 ### pasta com prints ###
-screenshots
+.screenshots
 
 
 ### Django ###
