@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-*y7qcjnc583nd8$7-+_f)%s*p7ix)23mte_x2+y-$gz^+-54ky
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vorthrox.pythonanywhere.com']
+ALLOWED_HOSTS = ['.localhost','vorthrox.pythonanywhere.com']
 
 
 # Application definition
