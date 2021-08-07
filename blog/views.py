@@ -3,6 +3,7 @@ from .models import Post
 from .forms import CommentForm
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.urls import reverse_lazy
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -40,3 +41,9 @@ def post_detail(request, slug):
 def sobre(request):
     template_name = 'sobre.html'
     return render(request, template_name)
+
+
+class PostCreate(generic.CreateView):
+    model = Post
+    fields = "__all__"
+    success_url = reverse_lazy('home')
