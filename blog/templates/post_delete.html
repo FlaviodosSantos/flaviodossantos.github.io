@@ -3,20 +3,25 @@
 {% block title %}Deletar Post{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-4 text-center">
-            <h1>Deletar Post</h1>
-            <form class="" method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    Você quer mesmo deletar este post ?
-                    <input class="btn btn-danger" type="submit" value="Deletar" />
-                    <a class="btn btn-success" href="{% url 'home' %}" >Voltar</a>
-                <br>
-                
-            </form>
+  <br>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card auth-card">
+                <div class="card-body">
+                    <h1>Deletar Post</h1>
+                    <form class="" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            Você quer mesmo deletar este post ?
+                            <input class="btn btn-danger" type="submit" value="Deletar" />
+                            <a class="btn btn-success" href="{% url 'home' %}" >Voltar</a>
+                        <br>
+                        
+                    </form>
+                </div>
+            </div>    
+
         </div>
         
-    </div>
-</div>   
+    </div> 
 {% endblock %}
+
