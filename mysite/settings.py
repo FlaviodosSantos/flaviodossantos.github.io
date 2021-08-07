@@ -130,15 +130,14 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<< HEAD
 MEDIA_URL = '/media/'
 STATIC_ROOT = Path(BASE_DIR / 'static')
 MEDIA_ROOT = Path(BASE_DIR / 'media')
-=======
+
 # urls de redirecionamento do login
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 # o cripy precisa desse caminho
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
->>>>>>> 8ddde3744d902ac40a4b9fcd86cc2726981af250
+
