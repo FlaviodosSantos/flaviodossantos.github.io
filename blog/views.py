@@ -59,3 +59,7 @@ class PostDelete(generic.DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
+
+def contato(request):
+    template_name = 'comtato.html'
+    return render(request, template_name)

@@ -1,0 +1,48 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+</style>
+
+
+
+<header class="bg-info">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h3 class=" site-heading my-4 mt- text-white"> Contato </h3>
+                    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<br>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card auth-card">
+                <div class="card-body text-center">
+                    <h4 class="card-title ">E-mail</h4>
+                    <p>flaviovorthrox@yahoo.com.br</p>
+                    <br>
+                    <h4 class="card-title" href="https://github.com/FlaviodosSantos" >Github</h4>
+                    <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+                </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+{% endblock content %}
