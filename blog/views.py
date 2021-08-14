@@ -63,3 +63,14 @@ class PostDelete(generic.DeleteView):
 def contato(request):
     template_name = 'contato.html'
     return render(request, template_name)
+
+class PostSearch(generic.ListView):
+    model = Post
+    template_name = 'search_results.html'
+    paginate_by = 5 #paginação     
+
+    def get_queryset(self): # new
+        query = self.request.GET.get('search')
+        object_list = Post.objects.filter(title__icontains=query).order_by('-created_on')
+                
+        return object_list
