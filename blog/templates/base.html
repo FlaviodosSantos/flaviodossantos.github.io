@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <title>BS Info</title>
@@ -66,9 +66,12 @@
                         
                     </ul>
 
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <form class="d-flex" method="GET" action="{% url 'search_results' %}" >
+                        <input class="form-control me-sm-2" type="text" placeholder="Search" 
+                            id="search" name="search" >
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="search-btn">
+                            Search
+                        </button>
                     </form>
                 </div>
             </div>
@@ -82,5 +85,13 @@
         <footer class="py-3 bg-grey">
             <p class="m-0 text-primary text-center ">Copyright &copy; Vorthrox 2021</p>
         </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous">
+        </script>
+
+        <script src=""></script>
     </body>
 </html>
