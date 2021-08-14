@@ -1,4 +1,4 @@
-$(document).ready(function) {
+$(document).ready(function () {
     var searchBtn = $('#search-btn');
     var searchForm = $('#search-form');
 
@@ -6,4 +6,4 @@ $(document).ready(function) {
         searchForm.submit();
     });
 
-}
+});
